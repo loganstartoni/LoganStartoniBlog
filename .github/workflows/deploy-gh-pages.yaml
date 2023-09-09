@@ -1,6 +1,9 @@
 name: Code Validation
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   Run-Code-Validation:
@@ -17,4 +20,4 @@ jobs:
       - name: Install dependencies
         run: poetry install
       - name: Deploy Site
-        run: poetry run mkdocs gh-deploy --force
+        run: poetry run mkdocs gh-deploy --force --clean --verbose
