@@ -1,5 +1,6 @@
 site_name: Logan Startoni Blog
 site_author: Logan Startoni
+site_url: https://blog.startoni.cloud
 site_description: This site is for the daily findings of Logan Startoni in his daily life. Whether that is development or just life.
 theme:
   name: material

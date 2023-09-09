@@ -1,9 +1,11 @@
-name: Code Validation
+name: Deploy Mkdocs Site
 
 on:
   push:
     branches:
       - main
+concurrency:
+  group: deployment
 
 jobs:
   Run-Code-Validation:
