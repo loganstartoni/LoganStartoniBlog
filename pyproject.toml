@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "loganstartoniblog"
+version = "0.1.0"
+description = ""
+authors = ["loganstartoni <logan@startoni.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mkdocs = "^1.5.2"
+mkdocs-material = "^9.2.8"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
