@@ -19,13 +19,5 @@ jobs:
           cache: 'poetry'
       - name: Install dependencies
         run: poetry install
-      - name: configure ssh
-        run: |
-          mkdir ~/.ssh
-          echo "Host github.com" >> ~/.ssh/config
-          echo "        Hostname github.com" >> ~/.ssh/config
-          echo "        IdentityFile={{github.workspace}}/gh_deploy_key" >> ~/.ssh/config
-          cat ~/.ssh/config
-          echo $SSH_GITHUB_DEPLOY_KEY >> gh_deploy_key
       - name: Deploy Site
         run: poetry run mkdocs gh-deploy --force --clean --verbose
