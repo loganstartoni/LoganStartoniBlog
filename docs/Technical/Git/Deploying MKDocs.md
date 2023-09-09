@@ -11,7 +11,7 @@ The gotchas I found while deploying mkdocs to github pages.
 # Github Action Permissions
 Add the necessary Permissions to do write operations in the action: 
 ![GHA Permissions](img/githubActionPermissions.png)
-This allows you to write back to the current repo you are working in. 
+This allows you to write back to the current repo you are working in. This is the part that I missed when I was first trying to set this up.
 
 # Configure Github Actions to build your site
 I use poetry to manage my dependencies because of that I have to also ensure poetry is installed. The following yaml ensures poetry is installed, install the project dependencies, then deploys the github pages site. 
