@@ -10,7 +10,7 @@ This describes how I like to configure my logging for python projects that I wri
 
 # Getting Started
 
-## In the Main Module
+## In the file that launches your python program
 ```python
 import logging
 
@@ -20,7 +20,7 @@ logging.basicConfig(format=log_format)
 logger = logging.getLogger()
 ```
 
-### Description of Above
+### Description of Python Code
 1. Import the logging module
     - Allows us to use the internal logging module in python
 2. Setup the log format, this sets up a standard log format that will be used across your file. The documentation for what is available is located [here](https://docs.python.org/3/library/logging.html#logrecord-attributes). My Logstring does the following. I found that it helps me with debugging by having it setup this way.
@@ -29,7 +29,7 @@ logger = logging.getLogger()
 4. get a logger instance.
 
 
-## In any supporting File
+## After Configured Logging Usage
 ```python
 import logging
 
