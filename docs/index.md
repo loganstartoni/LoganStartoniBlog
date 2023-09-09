@@ -1,18 +1,3 @@
-# Welcome to MkDocs
-Testing Repo
+# Overview
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+This is a Blog to keep neat little fun facts that I find in one spot. It will allow me to have my own knowledge base. It is not meant to be a list of best practices more a list of interesting ways to handle problems that come up in my life. 
