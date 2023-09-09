@@ -1,3 +1,10 @@
+---
+title: Logging Preferences 
+summary: What I like to use for when implementing logging in python modules.
+authors:
+    - Logan Startoni
+date: 2023-09-09
+---
 # Overview
 This describes how I like to configure my logging for python projects that I write. Including the log output format. 
 
