@@ -21,6 +21,7 @@ jobs:
         run: poetry install
       - name: configure ssh
         run: |
+          mkdir ~/.ssh
           echo "Host github.com" >> ~/.ssh/config
           echo "        Hostname github.com" >> ~/.ssh/config
           echo "        IdentityFile={{github.workspace}}/gh_deploy_key" >> ~/.ssh/config
