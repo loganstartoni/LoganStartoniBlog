@@ -16,5 +16,5 @@ jobs:
           cache: 'poetry'
       - name: Install dependencies
         run: poetry install
-      - name: Test with pytest
-        run: mkdocs gh-deploy --force
+      - name: Deploy Site
+        run: poetry run mkdocs gh-deploy --force
