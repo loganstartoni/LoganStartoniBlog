@@ -4,3 +4,12 @@ site_description: This site is for the daily findings of Logan Startoni in his d
 theme:
   name: material
 site_url: https://blog.startoni.cloud
+markdown_extensions:
+  - codehilite
+  - nl2br
+  - smarty
+  - toc:
+      anchorlink: true
+      permalink: true
+  - tables
+  - sane_lists
