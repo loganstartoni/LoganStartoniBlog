@@ -104,7 +104,6 @@ Similarly to the configuration on the ports. We also have the ability to name th
 - `--providers.docker` - Enables the docker provider
 - `--providers.docker.exposedbydefault=false` - Sets whether any docker container that is deployed should be enabled. 
 
-
 ### File Provider
 ```yaml
       ## File Provider for Custom local services

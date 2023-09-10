@@ -6,7 +6,7 @@ authors:
 date: 2023-09-10
 ---
 # Overview
-This page will break down the parts of the Label in the [docker file](Docker%3A%20All%20Together%20Now.md). This will allow you to extend it if you have to. 
+This page will break down the parts of the Label in the [docker file](Docker%3A%20All%20Together%20Now.md). This will allow you to extend it if you have to. Additional this will show you some of the configuration available to you for exposing a docker image.
 
 Configuring the [command](Docker%3A%20Command%20Breakdown.md) to do what I wanted and the [labels](Docker%3A%20Labels%20Breakdown.md) is something that when I first dived into setting up my setup I struggled to understand. 
 
