@@ -14,7 +14,7 @@ This describes how I like to configure my logging for python projects that I wri
 ```python
 import logging
 
-log_format = ""
+log_format = "%(asctime)s - %(levelname)s - %(filename)S:%(funcname)s:%(lineno)d - %(message)s"
 logging.basicConfig(format=log_format)
 
 logger = logging.getLogger()

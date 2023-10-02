@@ -57,7 +57,7 @@ services:
       - "--certificatesresolvers.ledns.acme.dnschallenge.delaybeforecheck=30"
       - "--certificatesresolvers.ledns.acme.tlschallenge=false"
       # HTTPS - Create Certificates - dns - dev
-      - "--certificatesresolvers.lednsDev.acme.tlschallenge=true"
+      - "--certificatesresolvers.lednsDev.acme.dnschallenge=true"
       - "--certificatesresolvers.lednsDev.acme.email=${DOCKER_TRAEFIK_LETSENCRYPT_EMAIL}"
       - "--certificatesresolvers.lednsDev.acme.storage=/letsencrypt/acme_dev_dns.json"
       - "--certificatesresolvers.lednsDev.acme.dnschallenge.provider=namecheap"
@@ -84,7 +84,7 @@ services:
 
       # Dashboard over HTTPS
       - "traefik.enable=true"
-      - "traefik.http.routers.traefik.rule=Host(`dash.${TRAEFIK_DOMAIN}`)"
+      - "traefik.http.routers.traefik.rule=Host(`dash.${DOCKER_TRAEFIK_DOMAIN}`)"
       - "traefik.http.routers.traefik.service=api@internal"
       - "traefik.http.routers.traefik.tls.certresolver=le${DOCKER_CERT_RESOLVER_SUFFIX}"
       - "traefik.http.routers.traefik.entrypoints=websecure"
