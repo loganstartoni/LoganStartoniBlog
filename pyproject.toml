@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-mkdocs-material = "^9.4.4"
+mkdocs-material = "^9.4.6"
 
 
 [build-system]
