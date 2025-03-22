@@ -1,5 +1,5 @@
 ---
-title: Logging Preferences 
+title: Settings Management 
 summary: What I like to use for managing settings in my code.
 authors:
     - Logan Startoni
