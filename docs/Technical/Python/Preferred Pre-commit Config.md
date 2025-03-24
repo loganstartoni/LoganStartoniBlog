@@ -1,5 +1,5 @@
 ---
-title: Preferred Pre-commit Config
+title: Preferred Python Pre-commit Config
 summary: Example Pre-commit Config
 
 authors:
